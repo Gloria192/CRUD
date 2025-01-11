@@ -31,7 +31,7 @@ let cell1=newRow.insertCell(0);
  let cell4=newRow.insertCell(3);
  cell4.innerHTML=data.perprice;
  let cell5=newRow.insertCell(4);
- cell5.innerHTML= '<button>Edit</button> <button>Delete</button>'
+ cell5.innerHTML= '<button onclick= 'onEdit(this)'>Edit</button> <button>Delete</button>'
  
 }
 // edit
@@ -47,4 +47,14 @@ selectRow.cells[0].innerHTML=formdata.productcode;
 selectRow.cells[1].innerHTML=formdata.product;
 selectRow.cells[2].innerHTML=formdata.qty;
 selectRow.cells[3].innerHTML=formdata.perprice;
+ }
+ //delete
+ function onDelete(){
+    if(confirm('do you want to delete this record')){
+        row=td.parentgetElement;
+        document.getElementById('productcode').value='';
+        document.getElementById('product').value='';
+        document.getElementById('qty').value='';
+        document.getElementById('perprice').value='';
+    }
  }

@@ -39,3 +39,19 @@ input[type="submit"],input[type="reset"]{
     font-size: 1rem;
     cursor: pointer;
 }
+input[type="submit"]:hover{
+    background: #4b99d8;
+}
+input[type="reset"]:hover{
+    background: #4b99d8;
+}
+button{
+    background: #eee;
+     padding:  6px 12px;
+     margin:  15px 0 10px;
+     display: inline-block;
+     border:none;
+     border-radius: 30px;
+     font-size: 1rem;
+     cursor: pointer;
+ }

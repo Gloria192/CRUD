@@ -1,0 +1,23 @@
+body{
+    background-image: url(crud.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+table{
+    width: 80%;
+    margin: 40px;
+    background: gray;
+}
+table.list{
+    text-align: center;
+    width: 100%;
+}
+td{
+    border: 1px solid green;
+    padding: 8px 15px;
+    text-align: left;
+}
+tr:nth-child(even),table.list thead> tr{
+    background-color: aliceblue;
+}

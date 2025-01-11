@@ -12,7 +12,7 @@
     <table>
         <tr>
             <td>
-                <form>
+                <form autocomplete="off" onsubmit="onformSubmit()">
                     <div>
                         <label for="productcode"> product code</label>
                         <input type="text" name="productcode" id="productcode">
@@ -30,14 +30,14 @@
                         <label for="qty"> qty</label>
                         <input type="text" name="qty" id="qty">
                     </div>
-                    <div>
+                    <div class="form_action...button">
                         <input type="submit" value="submit" >
                         <input type="reset" value="reset">
                     </div>
                 </form>
           
             <td>
-            <table>
+            <table class="list" id="storelist">
                 <thead>
                     <tr>
                       <th>Product Code</th>  
